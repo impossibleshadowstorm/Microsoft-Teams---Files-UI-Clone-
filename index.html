@@ -73,11 +73,37 @@
         width: calc(100vw - 348px);
         height: 100%;
         background-color: black;
+        display: flex;
+        justify-content: space-between;
       }
 
       .navbar .search-profile-icon .search-box input{
         width: 604px;
         padding: 0 20px;
+      }
+
+      .navbar .search-profile-icon .menu-profile{
+        background-color: brown;
+        display: flex;
+      }
+
+      .navbar .search-profile-icon .menu-profile .profile .profile-circle{
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: wheat;
+        position: relative;
+        margin: auto;
+        margin-right: 6px;
+        text-align: center;
+      }
+
+
+      .navbar .search-profile-icon .menu-profile .profile:hover{
+        background-color: #fff;
       }
 
       .content-container {
@@ -100,7 +126,12 @@
           <div class="search-box">
             <input type="text">
           </div>
-          <div class="menu-profile"></div>
+          <div class="menu-profile">
+            <div class="menu">keb</div>
+            <div class="profile">
+              <div class="profile-circle">SS</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="content-container"></div>
