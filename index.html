@@ -16,12 +16,16 @@
       }
 
       body {
+        margin: 0;
+        padding: 0;
         background-color: #f5f5f5;
         height: 100vh;
         width: 100vw;
       }
 
       .main-container {
+        margin: 0;
+        padding: 0;
         height: 100vh;
         width: 100vw;
       }
@@ -36,7 +40,6 @@
       .navbar .ms-logo {
         width: 68px;
         height: inherit;
-        background-color: brown;
         position: relative;
       }
 
@@ -59,26 +62,28 @@
 
       .navbar .ms-logo-text {
         width: 280px;
-        position: relative;
-        background-color: aqua;
-      }
-
-      .navbar .ms-logo-text span{
-        position: absolute;
-        width: 100%;
-        background-color: #fff;
-        height: 100%;
+        display: flex;
+        align-items: center;
+        color: white;
+        padding-left: 20px;
+        font-size: 14px;
       }
 
       .navbar .search-profile-icon {
-        width: 100vw - 348px;
-        background-color: wheat;
+        width: calc(100vw - 348px);
+        height: 100%;
+        background-color: black;
+      }
+
+      .navbar .search-profile-icon .search-box input{
+        width: 604px;
+        padding: 0 20px;
       }
 
       .content-container {
-        height: 100vh - 48px;
+        height: calc(100vh - 48px);
         width: 100vw;
-        background-color: black;
+        background-color: red;
       }
     </style>
   </head>
@@ -90,10 +95,13 @@
         <div class="ms-logo">
           <img src="../../Assets/Icons/menu.png" alt="Menu Button" />
         </div>
-        <div class="ms-logo-text">
-            <span>Microsoft Teams</span>
+        <div class="ms-logo-text">Microsoft Teams</div>
+        <div class="search-profile-icon">
+          <div class="search-box">
+            <input type="text">
+          </div>
+          <div class="menu-profile"></div>
         </div>
-        <div class="search-profile-icon"></div>
       </div>
       <div class="content-container"></div>
     </div>
