@@ -117,7 +117,7 @@
         Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
         sans-serif;
       font-size: 14px;
-      width: 620px;
+      width: 618px;
       height: 32px;
       padding-right: 30px;
       border: none;
@@ -288,7 +288,8 @@
       height: 100%;
       background-color: #f0f0f0;
       position: relative;
-      box-shadow: -5px -1px 13px -11px #78787b;
+      /* box-shadow: -5px -1px 13px -11px #78787b; */
+      box-shadow: -15px 0 10px -20px #78787b;
     }
 
     .content-container .mini-menu-bar .mini-menu-bar-top {
@@ -347,7 +348,7 @@
     .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .buttons {
       height: 74;
       width: 352;
-      padding-left: 4px;
+      padding: 0px 4px;
     }
 
     .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .views-icon-text {
@@ -358,9 +359,17 @@
       display: flex;
     }
 
+    .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .views-icon-text:hover {
+      cursor: pointer;
+    }
+
     .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .arrow-icon {
       width: 15.5px;
       height: 15.5px;
+      visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .buttons .recent {
@@ -438,7 +447,152 @@
     .content-container .menu-bar-content-container {
       width: calc(100vw - 428px);
       height: 100%;
-      background-color: brown;
+      position: relative;
+      background-color: #F5F5F5;
+      box-shadow: -15px 0px 10px -20px #78787b;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 {
+      margin: 0px 20px;
+      height: 100%;
+      width: calc(100% - 40px);
+      background-color: aqua;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-heading {
+      height: 63px;
+      width: 100%;
+      background-color: #F5F5F5;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-heading .heading-icon-text {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-heading .heading-icon-text .mb-cc-icon {
+      height: 32px;
+      width: 32px;
+      background-color: #5B5FC7;
+      border-radius: 4px;
+      margin-bottom: 3px;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-heading .heading-icon-text .mb-cc-icon svg {
+      height: 32px;
+      width: 32px;
+      fill: white;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-heading .heading-icon-text .mb-cc-text {
+      font-size: 18px;
+      font-weight: 700;
+      width: calc(100% - 70px);
+      display: flex;
+      align-items: center;
+      margin-left: 12px;
+      padding-bottom: 5px;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content {
+      height: calc(100% - 40px);
+      width: 100%;
+      background-color: white;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content .spacing-box {
+      height: 8px;
+      width: 100%;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content .recent-files-table-heading {
+      height: 40px;
+      width: 100%;
+      padding: 3px 0px;
+      /* background-color: blue; */
+      border-bottom: 2px solid #F5F5F5;
+      display: flex;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content .recent-files-table-heading .rft-heading {
+      font-size: 12px;
+      font-family: inherit;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content .recent-files-table-heading .rft-heading .rft-inner-heading {
+      height: 24px;
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      color: #424242;
+      margin-bottom: 10px;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content .recent-files-table-heading .type-heading {
+      width: 63.2px;
+      height: 100%;
+      margin-left: 22px;
+      margin-right: 2px;
+      /* background-color: aqua; */
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content .recent-files-table-heading .name-heading {
+      width: 445px;
+      height: 100%;
+      /* background-color: brown; */
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content .recent-files-table-heading .modified-heading {
+      width: 149px;
+      height: 100%;
+      /* background-color: wheat; */
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content .recent-files-table-heading .location-heading {
+      width: 333px;
+      height: 100%;
+      /* background-color: yellow; */
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content .recent-files-table-heading .location-heading .rft-inner-heading {
+      padding-left: 2px;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content .recent-files-table-heading .refresh-heading {
+      width: 48px;
+      position: relative;
+      height: 48px;
+      height: 100%;
+      /* background-color: blue; */
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content .recent-files-table-heading .refresh-heading:hover {
+      cursor: pointer;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content .recent-files-table-heading .refresh-heading .rft-inner-heading {
+      height: 24px;
+      width: 24px;
+      position: absolute;
+      top: 15px;
+      right: 7px;
+      /* bottom: 10px; */
+      margin: auto;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content .recent-files-table-heading .refresh-heading .rft-inner-heading svg {
+      margin: -4px 0 0 -8px;
+      fill: #424242;
+    }
+
+    .content-container .menu-bar-content-container .content-padding-20 .menu-bar-content-container-content .recent-files-table-heading .scroll-heading {
+      width: 16px;
+      height: 100%;
+      /* background-color: black; */
     }
   </style>
 </head>
@@ -703,9 +857,9 @@
           </div>
           <!-- Views Accordion -->
           <div class="views-accordion">
-            <div class="views-icon-text">
+            <div class="views-icon-text" id="views-accordion-hover">
               <div class="arrow-icon">
-                <svg viewBox="-10 -10 32 32" class="app-svg icons-triangle-down-small">
+                <svg viewBox="-6 -6 20 20" id="views-arrow-icon" class="app-svg icons-triangle-down-small">
                   <path class="icons-default-fill"
                     d="M3.07615 4.61732C3.23093 4.24364 3.59557 4 4.00003 4H8.00003C8.40449 4 8.76913 4.24364 8.92391 4.61732C9.07869 4.99099 8.99313 5.42111 8.70714 5.70711L6.70714 7.70711C6.31661 8.09763 5.68345 8.09763 5.29292 7.70711L3.29292 5.70711C3.00692 5.42111 2.92137 4.99099 3.07615 4.61732Z">
                   </path>
@@ -768,9 +922,9 @@
           <div class="spacing-box"></div>
           <!-- Cloud Storage Accordion -->
           <div class="views-accordion">
-            <div class="views-icon-text">
+            <div class="views-icon-text" id="cloud-storage-accordion-hover">
               <div class="arrow-icon">
-                <svg viewBox="-10 -10 32 32" class="app-svg icons-triangle-down-small">
+                <svg viewBox="-6 -6 20 20" id="cloud-storage-arrow-icon" class="app-svg icons-triangle-down-small">
                   <path class="icons-default-fill"
                     d="M3.07615 4.61732C3.23093 4.24364 3.59557 4 4.00003 4H8.00003C8.40449 4 8.76913 4.24364 8.92391 4.61732C9.07869 4.99099 8.99313 5.42111 8.70714 5.70711L6.70714 7.70711C6.31661 8.09763 5.68345 8.09763 5.29292 7.70711L3.29292 5.70711C3.00692 5.42111 2.92137 4.99099 3.07615 4.61732Z">
                   </path>
@@ -822,7 +976,61 @@
       </div>
       <!-- Menu Bar Content -->
       <div class="menu-bar-content-container">
+        <div class="content-padding-20">
+          <div class="menu-bar-content-container-heading">
+            <div class="heading-icon-text">
+              <div class="mb-cc-icon">
+                <svg viewBox="-6 -6 32 32" role="presentation" class="app-svg icons-recents">
+                  <g class="icons-default-fill">
+                    <path
+                      d="M10 2C14.4183 2 18 5.58172 18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2ZM10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3ZM9.5 5C9.74546 5 9.94961 5.17688 9.99194 5.41012L10 5.5V10H12.5C12.7761 10 13 10.2239 13 10.5C13 10.7455 12.8231 10.9496 12.5899 10.9919L12.5 11H9.5C9.25454 11 9.05039 10.8231 9.00806 10.5899L9 10.5V5.5C9 5.22386 9.22386 5 9.5 5Z">
+                    </path>
+                  </g>
+                </svg>
+              </div>
+              <div class="mb-cc-text">
+                Recent
+              </div>
+            </div>
+          </div>
+          <div class="menu-bar-content-container-content">
+            <div class="spacing-box"></div>
+            <div class="recent-files-table-heading">
+              <div class="rft-heading type-heading">
+                <div class="rft-inner-heading">Type</div>
+              </div>
+              <div class="rft-heading name-heading">
+                <div class="rft-inner-heading">Name</div>
+              </div>
+              <div class="rft-heading modified-heading">
+                <div class="rft-inner-heading">Modified</div>
+              </div>
+              <div class="rft-heading location-heading">
+                <div class="rft-inner-heading">Location</div>
 
+              </div>
+              <div class="rft-heading refresh-heading" id="refresh-icon">
+                <div class="rft-inner-heading">
+                  <svg viewBox="-6 -6 32 32">
+                    <g>
+                      <path class="icons-unfilled" id="refresh-uf-icon"
+                        d="M3.06573 9.05001C3.5904 5.21978 7.12074 2.5401 10.951 3.06478C12.8937 3.3309 14.5398 4.36954 15.6231 5.82967L15.7494 6H12.5001C12.2239 6 12.0001 6.22386 12.0001 6.5C12.0001 6.77614 12.2239 7 12.5001 7H16.5001C16.7762 7 17.0001 6.77614 17.0001 6.5V2.5C17.0001 2.22386 16.7762 2 16.5001 2C16.2239 2 16.0001 2.22386 16.0001 2.5V4.70732C14.7758 3.3185 13.0653 2.34507 11.0867 2.07403C6.70929 1.4744 2.67461 4.53689 2.07498 8.91429C1.47535 13.2917 4.53784 17.3264 8.91524 17.926C13.2926 18.5256 17.3273 15.4631 17.9269 11.0857C18.0011 10.5445 18.0192 10.0079 17.9857 9.48211C17.9681 9.20653 17.7304 8.9974 17.4548 9.015C17.1792 9.03261 16.9701 9.27028 16.9877 9.54586C17.017 10.0055 17.0012 10.4752 16.9362 10.95C16.4115 14.7802 12.8812 17.4599 9.05095 16.9353C5.22073 16.4106 2.54105 12.8802 3.06573 9.05001Z">
+                      </path>
+                      <path class="icons-filled" id="refresh-f-icon"
+                        d="M10.6276 2.0247C6.22292 1.67804 2.37123 4.96771 2.02457 9.37236C1.67792 13.777 4.96758 17.6287 9.37224 17.9754C13.7769 18.322 17.6286 15.0324 17.9752 10.6277C17.9976 10.3442 18.0038 10.0397 17.9948 9.73856C17.9824 9.32453 17.6367 8.99896 17.2227 9.01137C16.8086 9.02378 16.4831 9.36947 16.4955 9.7835C16.5029 10.0321 16.4978 10.2826 16.4799 10.51C16.1982 14.0888 13.0687 16.7617 9.48993 16.48C5.91114 16.1983 3.23829 13.0688 3.51995 9.49005C3.8016 5.91127 6.93111 3.23842 10.5099 3.52008C12.2462 3.65672 13.8156 4.47053 14.9222 5.75475L15.1258 6.00263L12.747 6.0035L12.6452 6.01035C12.2791 6.06001 11.997 6.37381 11.997 6.7535C11.997 7.1332 12.2791 7.44699 12.6452 7.49666L12.747 7.5035H16.7469L16.8487 7.49666C17.1815 7.45151 17.4449 7.18807 17.4901 6.85527L17.4969 6.7535V2.7535L17.4901 2.65173C17.4449 2.31894 17.1815 2.0555 16.8487 2.01035L16.7469 2.0035L16.6451 2.01035C16.3124 2.0555 16.0489 2.31894 16.0038 2.65173L15.9969 2.7535L15.9981 4.70625C14.6402 3.16635 12.7322 2.19034 10.6276 2.0247Z">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+
+              </div>
+              <div class="rft-heading scroll-heading">
+                <div class="rft-inner-heading"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -973,6 +1181,51 @@
         document.getElementById("sm-help").style.visibility = "hidden";
         document.getElementById("sm-uf-help").style.visibility = "visible";
       });
+
+    // Views Accordion Icon Hover Visibility and Fill
+    document
+      .getElementById("views-accordion-hover")
+      .addEventListener("mouseover", function () {
+        document.getElementById("views-arrow-icon").style.visibility = "visible";
+        document.getElementById("views-arrow-icon").style.fill = "black";
+      });
+    document
+      .getElementById("views-accordion-hover")
+      .addEventListener("mouseleave", function () {
+        document.getElementById("views-arrow-icon").style.visibility = "hidden";
+        document.getElementById("views-arrow-icon").style.fill = "black";
+      });
+
+    // Cloud Storage Accordion Icon Hover Visibility and Fill
+    document
+      .getElementById("cloud-storage-accordion-hover")
+      .addEventListener("mouseover", function () {
+        document.getElementById("cloud-storage-arrow-icon").style.visibility = "visible";
+        document.getElementById("cloud-storage-arrow-icon").style.fill = "black";
+      });
+    document
+      .getElementById("cloud-storage-accordion-hover")
+      .addEventListener("mouseleave", function () {
+        document.getElementById("cloud-storage-arrow-icon").style.visibility = "hidden";
+        document.getElementById("cloud-storage-arrow-icon").style.fill = "black";
+      });
+
+    // Refresh Icon Visibility, Hover and Fill
+    document
+      .getElementById("refresh-icon")
+      .addEventListener("mouseover", function () {
+        document.getElementById("refresh-f-icon").style.visibility = "visible";
+        document.getElementById("refresh-f-icon").style.fill = "#5B5FC7";
+        document.getElementById("refresh-uf-icon").style.visibility = "hidden";
+      });
+    document
+      .getElementById("refresh-icon")
+      .addEventListener("mouseleave", function () {
+        document.getElementById("refresh-f-icon").style.visibility = "hidden";
+        document.getElementById("refresh-uf-icon").style.visibility =
+          "visible";
+      });
+
   </script>
 </body>
 
