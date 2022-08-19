@@ -313,28 +313,9 @@
       font-weight: bold;
     }
 
-    .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .views-icon-text {
-      margin-left: 4px;
-      width: 352px;
-      height: 19px;
-      padding-top: 2px;
-      display: flex;
-    }
-
-    .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .arrow-icon {
-      width: 15.5px;
-      height: 15.5px;
-    }
-
     .content-container .mini-menu-bar .mini-menu-bar-top .accordion-title {
       color: #616161;
       font-size: 12px;
-    }
-
-    .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .buttons {
-      height: 74;
-      width: 352;
-      padding-left: 4px;
     }
 
     .content-container .mini-menu-bar .mini-menu-bar-top .accordion-btn-design {
@@ -342,6 +323,12 @@
       height: 37px;
       width: 352;
       border-radius: 5px;
+      padding-left: 20px;
+    }
+
+    .content-container .mini-menu-bar .mini-menu-bar-top .accordion-btn-design:hover {
+      background-color: #fafafa;
+      cursor: pointer;
     }
 
     .content-container .mini-menu-bar .mini-menu-bar-top .accordion-btn-icon {
@@ -357,8 +344,39 @@
       color: #242424;
     }
 
+    .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .buttons {
+      height: 74;
+      width: 352;
+      padding-left: 4px;
+    }
+
+    .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .views-icon-text {
+      margin-left: 4px;
+      width: 352px;
+      height: 19px;
+      padding-top: 2px;
+      display: flex;
+    }
+
+    .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .arrow-icon {
+      width: 15.5px;
+      height: 15.5px;
+    }
+
     .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .buttons .recent {
       background-color: white;
+    }
+
+    .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .buttons .recent:hover {
+      background-color: #fafafa;
+    }
+
+    .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .buttons .recent .accordion-btn-text {
+      height: 32px;
+    }
+
+    .content-container .mini-menu-bar .mini-menu-bar-top .views-accordion .buttons .ms-teams svg {
+      padding: 4px;
     }
 
     .content-container .mini-menu-bar .mini-menu-bar-down {
@@ -366,6 +384,11 @@
       position: absolute;
       bottom: 0;
       margin-bottom: 15px;
+    }
+
+    .content-container .mini-menu-bar .mini-menu-bar-top .spacing-box {
+      width: 342px;
+      height: 20px;
     }
 
     .content-container .mini-menu-bar .mini-menu-bar-down .add-cloud-storage-btn {
@@ -678,6 +701,7 @@
           <div class="mini-menu-bar-heading">
             <div class="files-title">Files</div>
           </div>
+          <!-- Views Accordion -->
           <div class="views-accordion">
             <div class="views-icon-text">
               <div class="arrow-icon">
@@ -690,6 +714,7 @@
               <div class="accordion-title">Views</div>
             </div>
             <div class="buttons">
+              <!-- Recent -->
               <div class="accordion-btn-design recent">
                 <div class="accordion-btn-icon">
                   <svg viewBox="-6 -6 32 32">
@@ -702,7 +727,8 @@
                 </div>
                 <div class="accordion-btn-text">Recent</div>
               </div>
-              <div class="accordion-btn-design">
+              <!-- Microsoft Teams -->
+              <div class="accordion-btn-design ms-teams">
                 <div class="accordion-btn-icon">
                   <svg viewBox="0 0 28 28">
                     <g>
@@ -739,7 +765,42 @@
               </div>
             </div>
           </div>
-          <div class="cloud-storage-accordion">Cloud Storage</div>
+          <div class="spacing-box"></div>
+          <!-- Cloud Storage Accordion -->
+          <div class="views-accordion">
+            <div class="views-icon-text">
+              <div class="arrow-icon">
+                <svg viewBox="-10 -10 32 32" class="app-svg icons-triangle-down-small">
+                  <path class="icons-default-fill"
+                    d="M3.07615 4.61732C3.23093 4.24364 3.59557 4 4.00003 4H8.00003C8.40449 4 8.76913 4.24364 8.92391 4.61732C9.07869 4.99099 8.99313 5.42111 8.70714 5.70711L6.70714 7.70711C6.31661 8.09763 5.68345 8.09763 5.29292 7.70711L3.29292 5.70711C3.00692 5.42111 2.92137 4.99099 3.07615 4.61732Z">
+                  </path>
+                </svg>
+              </div>
+              <div class="accordion-title">Cloud storage</div>
+            </div>
+            <div class="buttons">
+              <!-- Microsoft Teams -->
+              <div class="accordion-btn-design ms-teams">
+                <div class="accordion-btn-icon">
+                  <svg viewBox="0 0 28 28">
+                    <path
+                      d="M16.5002 17L21.4542 12.262C20.6262 9.021 17.6872 6.625 14.1872 6.625C11.5692 6.625 9.26522 7.968 7.92322 10.002C8.00022 10 16.5002 17 16.5002 17Z"
+                      fill="#0364B8"></path>
+                    <path
+                      d="M11.1522 10.8938V10.8948C10.2362 10.3278 9.15624 9.9998 8.00024 9.9998C7.97424 9.9998 7.94924 10.0018 7.92324 10.0018C4.64524 10.0428 2.00024 12.7118 2.00024 15.9998C2.00024 17.2758 2.39924 18.4568 3.07824 19.4298L10.5002 18.4998L16.1902 13.9118L11.1522 10.8938Z"
+                      fill="#0078D4"></path>
+                    <path
+                      d="M21.4543 12.2622C21.3453 12.2552 21.2363 12.2502 21.1253 12.2502C20.4383 12.2502 19.7853 12.3922 19.1933 12.6492L19.1923 12.6482L16.1903 13.9112L19.5003 18.0002L25.4173 19.4382C25.7893 18.7502 26.0003 17.9622 26.0003 17.1252C26.0003 14.5432 23.9933 12.4312 21.4543 12.2622Z"
+                      fill="#1490DF"></path>
+                    <path
+                      d="M3.07825 19.4297C4.16225 20.9827 5.96225 21.9997 8.00025 21.9997H21.1252C22.9802 21.9997 24.5932 20.9637 25.4172 19.4387L16.1902 13.9117L3.07825 19.4297Z"
+                      fill="#28A8EA"></path>
+                  </svg>
+                </div>
+                <div class="accordion-btn-text">OneDrive</div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="mini-menu-bar-down">
           <div class="add-cloud-storage-btn">
@@ -759,7 +820,10 @@
           </div>
         </div>
       </div>
-      <div class="menu-bar-content-container"></div>
+      <!-- Menu Bar Content -->
+      <div class="menu-bar-content-container">
+
+      </div>
     </div>
   </div>
 
